@@ -1,0 +1,89 @@
+
+body {
+  width: 100%;
+  background: linear-gradient(-45deg, black 0%, #0a005e 100%);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+h1{
+    color: white;
+    font-size: 45px;
+    font-style: italic;
+    text-align: center;
+}
+
+button{
+    background: #cc9924;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+button:hover{
+    background: #d000c9;
+}
+
+.btnGroup{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 8px;
+}
+
+#table-container {
+  border-radius: 15px;
+  border: 10px solid rgba(255, 255, 255, 0.03);
+  max-width: 100%;
+  /* overflow: hidden; */
+  margin-bottom: 80px;
+}
+#table-container table {
+  border-collapse: collapse;
+  height: auto;
+  color: rgba(255, 255, 255, 0.3);
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0%, rgba(245, 255, 246, 0.1) 100%);
+}
+#table-container table tbody {
+  height: 100%;
+  width: 100%;
+}
+#table-container table tr td,
+#table-container table tr th {
+  padding: 20px;
+  text-align: left;
+}
+#table-container table tr th {
+  color: rgba(255, 255, 255, 0.7);
+}
+#table-container table tr td {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: lighter;
+}
+#table-container table tr td:hover {
+  background-color: rgba(255, 255, 255, 0.01);
+}
+#table-container table tr:first-child {
+  background: linear-gradient(45deg, #d000c9 0%, #cc9924 100%);
+}
+
+p{
+    color: white;
+    font-size: 30px;
+    text-align:center;
+    margin: auto;
+}
+
+@media (max-width: 767px) {
+    #table-container {
+        overflow-x: auto;
+    }
+
+    .btnGroup{
+        flex-direction: column;
+    }
+}
